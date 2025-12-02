@@ -379,6 +379,22 @@ svg {
   }
 }
 
+/* Section header (for non-mobile desktop headings) */
+.section-header {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .section-header {
+    display: block;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--slate-100);
+    margin-bottom: var(--spacing-2xl);
+    letter-spacing: -0.025em;
+  }
+}
+
 /* About Content */
 .about-content {
   display: flex;
